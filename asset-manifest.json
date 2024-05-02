@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-project-5-birthday-lister/static/css/main.678dfff7.css",
+    "main.js": "/react-project-5-birthday-lister/static/js/main.7ba6588c.js",
+    "index.html": "/react-project-5-birthday-lister/index.html",
+    "main.678dfff7.css.map": "/react-project-5-birthday-lister/static/css/main.678dfff7.css.map",
+    "main.7ba6588c.js.map": "/react-project-5-birthday-lister/static/js/main.7ba6588c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.678dfff7.css",
+    "static/js/main.7ba6588c.js"
+  ]
+}
