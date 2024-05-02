@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import data from "./data"
+import List from "./Components/List"
 
-function App() {
+export default function App()
+{
+  let [people, setPeople] = React.useState(data)
+
+  let listItems = people.map((item)=>
+  {
+     return(
+        <List people={item} key={item.id}/>
+     )
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <div className="container">
+       <section className="box">
+          <h4>{people.length} birthdays today</h4>
+          {listItems}
+          <button onClick={()=> setPeople([])}>Clear all</button>
+       </section>
+      </div>
+    </main>
+  )
 }
-
-export default App;
